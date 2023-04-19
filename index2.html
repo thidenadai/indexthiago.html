@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <style>
+        body {
+            text-align: center;
+            background-color: aqua;
+            
+        }
+        .button{
+            background-color: brown;
+        }
+    </style>
+    <script>
+        function cubo() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado").innerText = var1.value * var1.value * var1.value;
+        }
+    </script>
+    <script>
+        function F2C() { // Converte Graus Far. para Celsius
+            //window.alert("teste")
+            var var1 = document.getElementById("val_f2c");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("res_f2c").innerText = (var1.value - 32) * 5 / 9;
+        }
+    </script>
+    <script>
+        function areatriangulo() {
+            //window.alert("teste")
+            var var3 = document.getElementById("val_alt");
+            var var4 = document.getElementById("val_base");
+            //window.alert(var3.value + " " + var4.value)
+            document.getElementById("res_area").innerText = var3.value * var4.value / 2;
+        }
+    </script>
+    <script>
+        function areacirculo() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valraio");
+            var varpi = 3.141519;
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("res_areac").innerText = varpi * (var1.value * var1.value);
+        }
+    </script>
+    <script>
+        function perimetrocirculo() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valpe");
+            var varpi = (3.141519);
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("respe").innerText = 2 * varpi * var1.value;
+        }
+    </script>
+    <script>
+        function desc() {
+            //window.alert("teste")
+            var var7 = document.getElementById("valdes");
+            var varpc = 100;
+            var vardes = 5;
+
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resdesc").innerText = (var7.value / varpc) * vardes;
+        }
+    </script>
+    <script>
+        function idade() {
+            //window.alert("teste")
+            var var7 = document.getElementById("val8");
+            if (var7.value <= 2005) {
+                document.getElementById("resultado8").innerText = ("voce é maior de idade");
+            } else {
+                document.getElementById("resultado8").innerText = ("voce é menor de idade");
+            }
+        }
+    </script>
+    <div>
+        <input id="val1" value="3">
+        <button onclick="cubo()">cubo</button>
+        <p id="resultado">XXXX</p>
+    </div>
+    <div>
+        <input id="val_f2c" value="32">
+        <button onclick="F2C()">Converter Para Celsius</button>
+        <p id="res_f2c">XXXX</p>
+    </div>
+    <div>
+        <input id="val_base" value="10">
+        <input id="val_alt" value="10">
+        <button onclick="areatriangulo()">area de triangulo</button>
+        <p id="res_area">XXXX</p>
+    </div>
+    <div>
+        <input id="valraio" value="10">
+        <button onclick="areacirculo()">area de circulo</button>
+        <p id="res_areac">XXXX</p>
+    </div>
+    <div>
+        <input id="valpe" value="10">
+        <button onclick="perimetrocirculo()">perimetro circulo</button>
+        <p id="respe">XXXX</p>
+    </div>
+    <div>
+        <input id="val8" value="2000">
+        <button onclick="idade()">voce é maior de idade?</button>
+        <p id="resultado8">XXXX</p>
+    </div>
+    <div>
+        <input id="valdes" value="100">
+        <button onclick="desc()">5% de desconto</button>
+        <p id="resdesc">XXXX</p>
+    </div>
+
+    <!-- <input id="val1" value="1">
+    <input id="val2" value="2">
+    <button onclick="escreve()">cubo</button>
+    
+    <button onclick="escreve1()">celsius</button>
+    <button onclick="escreve2()">area do triangulo</button>
+    <button onclick="escreve3()">Escrever</button>
+    <button onclick="escreve4()">Escrever</button>
+    <button onclick="escreve5()">Escrever</button>
+    
+    <p id="resultado">XXXX</p> -->
+</body>
+
+</html>
